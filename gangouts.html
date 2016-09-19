@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+.right{
+	float: right;
+}
+/*img{float: left;}*/
+a:link {
+    color: black;
+    background-color: solid;
+    text-decoration: none;
+   
+    /*text-align: right;*/
+}
+a:visited {
+    color: black;
+    background-color: solid;
+    text-decoration: none;
+    /*text-align: right;*/
+}
+a:hover {
+    color: black;
+    background-color: solid;
+    text-decoration: underline;
+    
+}
+
+</style>
+</head>
+<body>
+<div>
+<a class="" href="gangouts.html"><img src="gangout-logo.png" alt="logo"/></a>
+<!-- <p style="text-align:right"> -->
+<a href="about.html" class="right">  About Us </a>
+<a href="quickform.html" class="right"> Sign up | </a>
+
+</div>
+<!-- </p> -->
+<!-- </ul> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script type="text/javascript">
+            var picPaths = ['slider3.png','slider2.png','slider1.png'];
+            var curPic = -1;
+            //preload the images for smooth animation
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                imgCont.src = imgO[curPic].src;
+                setTimeout(swapImage,5000);
+            }
+
+            window.onload=function() {
+                imgCont = document.getElementById('img');
+                swapImage();
+            }
+        </script>
+        <div>
+            <img id="img" src="slider3.png" alt="slider3" />
+        </div>
+
+
+</body>
+</html>
