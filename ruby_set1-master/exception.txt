@@ -1,0 +1,1 @@
+This is a text file of execption.rb file. This file will be accessed in that program
