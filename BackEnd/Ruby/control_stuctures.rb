@@ -97,7 +97,7 @@ for m in 0..5
 end
 puts "---for 2----"
 
-[0,1,2,3,4,5].each do |h|
+(0..5).each do |h|
 	puts "Value of h in for loop = #{h}"
 end
 

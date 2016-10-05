@@ -1,5 +1,4 @@
 class Bird
-	
 	def speak(b)
 		b.speak
 	end
@@ -14,19 +13,16 @@ class Duck
 			
 	 end
 	 def fly
-	 	puts "I can fly"
-		
+	 	puts "I can fly"	
 	 end	
 end
 
 class Penguin
 	 def speak
-	 	puts "I do Penguin sound"
-		
+	 	puts "I do Penguin sound"	
 	 end
 	 def fly
-	 	puts "I can't fly"
-		
+	 	puts "I can't fly"	
 	 end
 end
 
