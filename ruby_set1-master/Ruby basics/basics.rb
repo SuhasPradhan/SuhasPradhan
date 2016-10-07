@@ -1,6 +1,6 @@
 # There are some errors in this program, make it error free and run them.
 
-
+ 
 numbers = [1,2,3,4]
 
 puts numbers.first

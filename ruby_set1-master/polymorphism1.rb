@@ -52,4 +52,4 @@ c.noise
 hu=Human.new("Talks")
 hu.noise
 hy=Hyena.new("Laughs")
-hy.noise
+hy.noise 

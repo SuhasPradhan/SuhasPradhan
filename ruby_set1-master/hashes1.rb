@@ -46,6 +46,6 @@ a=gets.to_i
 puts"price is #{mobiles[a]} INR"
 
 
-
+ 
 # brand = 'Input From the user'
 # rate = Mobile.new(brand)

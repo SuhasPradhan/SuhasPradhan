@@ -18,3 +18,4 @@ if a.even?
 else
 	puts "Odd"
 end
+ 

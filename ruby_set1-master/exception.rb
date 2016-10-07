@@ -15,4 +15,4 @@ File.open("exception.txxxt")
 	rescue Exception => e
 		puts e.message
 end
-# puts file=File.readlines("exception.txt")
+puts file=File.readlines("exception.txt")
