@@ -22,7 +22,7 @@ class Money
 		end
     end
 end
-	describe Money do
+describe Money do
 		describe "creation of money" do
 			it "should be created when a value and a currency type are given" do
 				money=Money.new(10,'INR')
@@ -38,9 +38,9 @@ end
 			end
 
 
-		end
+end
 
-		describe "addition of money" do
+describe "addition of money" do
 			it "should create a new money object with a value as sum of given values when
 			 two money objects of same currency are added" do
 			 money1 = Money.new(10,'INR')
@@ -85,4 +85,4 @@ end
 
 		end
 
-	end
+end

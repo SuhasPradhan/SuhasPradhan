@@ -1,49 +1,50 @@
 # Contruct a hash with a list of mobile brands and their prices.(Minimum of 10 brands)
 # Take input from the user.
-# Based on the input you need to show the price of the brand which he has entered.  
+# Based on the input you need to show the price of the brand which he has entered.
 # Make use of the below code and get the results
 
-class Mobiles
+# class Mobiles
 
   # def initialize(list)
   # end
 
-  def display(str)
-  	@str=str
-  	puts mobiles.value(@str)
+  # def display(str)
+  	# @str=str
 
-  end
-
+  # end
 
 
 
-end
-mobiles = {
-  "samsung"=> '10,000',
-  "motorola" => '15,000',
-  "apple"=>'60,000',
-  "microsoft" => '20,000',
-  "micromax" => '10,000',
-  "Sony" => '40,000',
-  "Karbonn" => '5,000',
-  "HTC" => '25,000',
-  "BlackBerry" => '30,000',
-  "YU" => '12,000'
+
+# end
+mobiles = 
+{
+  1 => '10,000',
+  2 => '15,000',
+  3 =>'60,000',
+  4 => '20,000',
+  5 => '10,000',
+  6 => '40,000',
+  7 => '5,000',
+  8 => '25,000',
+  9 => '30,000',
+ 10 => '12,000'
 }
-a=Mobiles.new
-puts "Enter the name of the brands shown below"
-puts 
- "samsung
-  motorola 
-  apple
-  microsoft
-  micromax 
-  Sony
-  Karbonn 
-  HTC
-  BlackBerry
-  YU"
-a.display(gets)
+# a=Mobiles.new
+puts "Press
+  1 for samsung
+  2 for motorola 
+  3 for apple
+  4 for microsoft
+  5 for micromax 
+  6 for Sony
+  7 for Karbonn 
+  8 for HTC
+  9 for BlackBerry
+  10 for YU"
+a=gets.to_i
+puts"price is #{mobiles[a]} INR"
+
 
 
 # brand = 'Input From the user'
