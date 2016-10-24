@@ -1,4 +1,16 @@
 <style>
+    #fb:hover {
+      color: #2732c2;
+    }
+    #yt:hover{
+      color: #900603;
+    } 
+    #tw:hover{
+      color: dodgerblue;
+    }
+    #steam:hover{
+      color: white;
+    }
     .col-sm-6{
       font-color: black;
     }
@@ -135,7 +147,10 @@ input[type=text]:focus {
 
 .well {
   background-color: #222222;
-
+  border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
 }
 /*CUSTOMIZE FOOTER*/
 .copy-left{
