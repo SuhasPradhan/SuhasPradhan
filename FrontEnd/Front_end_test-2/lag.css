@@ -1,0 +1,151 @@
+<style>
+    .col-sm-6{
+      font-color: black;
+    }
+    .head-div
+    {
+    color: #5a5a5a ;
+    background:#222222;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* CUSTOMIZE FOOTER */
+    footer {
+      background-color: #222222;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+
+  
+  /* CUSTOMIZE BODY AND NAV
+-------------------------------------------------- */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+.right{
+  float: right;
+  color:black;
+  font-size: 60px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel-caption {
+  z-index: 50;
+  top: 0;
+    bottom: auto;
+    color: invert;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color:#bbb;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.carousel-buttons {
+  z-index: 1100;
+  position: absolute;
+  width: 100%;
+  color:#fff;
+  bottom:1px;
+}
+.carousel-buttons > div {
+  padding:20px;
+  border:1px solid #fff;
+}
+.carousel-buttons a {
+  color:#fff;
+  display:block;
+  line-height:50px;
+}
+/*CUSTOMIZE Search bar */
+.l{
+    float: right;
+    margin-right: 28px;
+    color: black;
+/*margin-bottom: 30px;*/
+}
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+    background-color:#206C93;
+    background-image: url('icon-search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    /*-webkit-transition: width 0.5s ease-in-out ;
+    transition:  width 0.5s ease-in-out ;*/
+    /*-webkit-transition: reverse;
+    transition:reverse;*/
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+/* Search bar ends*/
+.col-sm-4 {
+    width:400px ;
+    height: 330px;
+    /*border-left-width: 10px;*/
+    margin-left: 28px;
+    margin-top: 60px;
+    /*margin-right: 15px;*/
+    color: black;
+}
+  
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+.well {
+  background-color: #222222;
+
+}
+/*CUSTOMIZE FOOTER*/
+.copy-left{
+  float: left;
+}
+.copy-right{
+  float: right;
+}
+/*CUSTOMIZE ABOUT PAGE*/
+.about{
+  color: black;
+}
+</style>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LAG:Local Area Gamers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="lag.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+</head>
+<body style="background-color:grey">
+
+    <div class="head-div">
+      <div class="row" style="margin-right: 0px;"> 
+         <div class="col-sm-3"> 
+            <a class="logo" onclick="dispHome()"><img onclick="dispHome()" width="95"; height="105" src="lag.jpg" alt="logo"/ data-toggle="tooltip" data-placement="top" title="Goto Homepage"></a>
+         </div>
+         <div class="col-sm-6">
+           <center><h1 class="heading" style="color:#206C93;">LAG:Local Area Gamers</h1></center>
+         </div>
+         <div class="col-sm3">
+          <a href="https://www.facebook.com/" target="_blank" class="right"><h1><i class="fa fa-facebook-official" data-toggle="tooltip" data-placement="top" title="Goto Facebook"></i></h1></a>
+          <a href="https://twitter.com/login" target="_blank" class="right"><h1><i class="fa fa-twitter" data-toggle="tooltip" data-placement="top" title="Goto Twitter"></i></h1></a>
+          <a href="https://in.youtube.com/" target="_blank" class="right"><h1><i class="fa fa-youtube-play" data-toggle="tooltip" data-placement="top" title="Goto YouTube"></i></h1></a>
+          <a href="https://steamcommunity.com/" target="_blank" class="right"><h1><i class="fa fa-steam" data-toggle="tooltip" data-placement="top" title="Goto Steam Website"></i></h1></a>
+         </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div> -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav nav-pills nav-justified" role="tablist">
+            <li><a onclick="dispHome()" data-toggle="tooltip" data-placement="top" title="Goto Homepage">Home</a></li>
+            <li><a onclick="dispAbout()" data-toggle="tooltip" data-placement="top" title="Goto About page">About</a></li>
+            <li class='dropdown'>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" data-toggle="tooltip" data-placement="top" title="Select host based on your locality">Host Select<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">HOST NETWORK-EAST</a></li>
+                <li><a href="#">HOST NETWORK-WEST</a></li>
+                <li><a href="#">HOST NETWORK-NORTH</a></li>
+                <li><a href="#">HOST NETWORK-SOUTH</a></li> 
+                <li><a href="#">HOST NETWORK-CENTRAL</a></li> 
+              </ul>
+            </li>
+            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Static">Blog</a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Static">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="home" id="h">
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="15000" data-wrap="true">
+      <div class="carousel-buttons">
+        <div class="col-md-3 text-center"><a data-target="#myCarousel" data-slide="prev" href="#" data-toggle="tooltip" data-placement="top" title="Previous">Prev</a></div>
+        <div class="col-md-2 text-center"><a data-target="#myCarousel" data-slide-to="0" href="#">One</a></div>
+        <div class="col-md-2 text-center"><a data-target="#myCarousel" data-slide-to="1" href="#">Two</a></div>
+        <div class="col-md-2 text-center"><a data-target="#myCarousel" data-slide-to="2" href="#">Three</a></div>
+        <div class="col-md-3 text-center"><a data-target="#myCarousel" data-slide="next" href="#" data-toggle="tooltip" data-placement="top" title="Next">Next</a></div>
+    </div>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="img-responsive" src="assassins-creed.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+             <h1>Game in progress</h1>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="Call-of-Duty-online.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+               <h1>Game in progress</h1>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="img-responsive" src="crysis.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+             <h1>Game in progress</h1>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="item">
+          <img class="img-responsive" src="http://placehold.it/1694x1131/777">
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div> -->
+      </div>
+      
+    </div>
+    <!-- /.carousel -->
+
+    <!-- Tag line -->
+      <!-- ================================== -->
+    <div class="container text-center">
+      <h1>IF YOU ARE A GAMER, YOU'RE AT THE RIGHT PLACE</h1><br>
+    </div><br>
+    <!-- Tag line ends -->
+
+    <!-- Search bar -->
+    <!-- ============================================== -->
+    <div class="l">
+      <input type="text" name="search" placeholder="Search..">
+    </div><br>
+    <!-- Search bar ends -->
+    <div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="nfs-mw.jpg" class="img-responsive" alt="Image">
+          <h4>This game will commence in 15min, hurry and register now</h4>
+          <button onclick="dispAbout()" type="button" class="btn btn-primary btn-block">Info</button>
+        </div>
+        <div class="col-sm-4">
+          <img src="Counter_Strike.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h4>This game will commence in 30min, hurry and register now</h4>
+          <button onclick="dispAbout()" type="button" class="btn btn-primary btn-block">Info</button>
+        </div>
+        <div class="col-sm-4">
+          <img src="fifa.jpg" class="img-responsive" style="width:100%" alt="Image">
+          <h4>This game will commence in 1hr, hurry and register now</h4>
+          <button onclick="dispAbout()" type="button" class="btn btn-primary btn-block">Info</button>
+        </div>
+      </div>
+    </div><br>
+    <div>
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="upgrade_pc_ad.jpg" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-6">
+          <div class="well">
+           <h1>Still Dreaming About Buying a Gaming PC??</h1><h1>Interested in refurbished gaming PC with high end Graphics Card????</h1><h1> Stay put till the link turns green</h1>
+           <h1><a href="" class="not-active">CLICK ME</a></h1>
+          </div>
+        </div>
+      </div>  
+    </div><br>
+    <div>
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="well">
+           <h2 style="width:100%"">Thinking about selling/buying Graphics card?? Stay tuned....</h2>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <a onclick="dispAbout()"><h2>More</h2></a>
+        </div>
+        <div class="col-sm-1">
+         <a href="#"><h2><i class="fa fa-chevron-up" style="font-size:48px"></i></h2></a>
+        </div>
+      </div>
+    </div><br>
+</div>
+
+<!-- ABOUT US -->
+
+<div style="display:none" class="about" id="a">
+  <div class="about-us">
+  <h1>ABOUT US</h1></div><br><br><br><br>
+  <h2>About LAG</h2><br>
+  <h3>LAG is the abbreviation of Local Area Gamers</h3>
+  <h3>Ever faced lagging while playing online games??</h3>
+  <h3>This website is for gamers who are crazy about multiplayer games</h3>
+  <h3>Guess what??? Its completely free!!!!</h3>
+  <h3>This website hosts all the multiplayer games in and around Mysuru</h3>
+  <h3>Call your team, register yourself and GAME ON!!</h3>
+  <h3>All you need to do is to click on the game you want to play and register yourself</h3>
+  <h3>The minimum requirements are good internet connection and the game you want to play pre-installed in your local machine</h3><br><br><br>
+  <h2>DON'T YOU HAVE A GAMING PC?????DO YOU WANT TO PLAY MULTIPLAYER GAMES??????? DON'T WORRY, IT'S THE INTEREST THAT COUNTS!!!! WE WILL HELP YOU GET A GOOD GAMING PC!!!!! AT UNBELIEVABLE DISCOUNTS!!! STAY TUNED FOR MORE</h2><br><br><br><br>
+
+  <h2>ABOUT BLOGGER</h2>
+  <h3><strong>Suhas Pradhan</strong>, is a hard-core gamer turned softwear developer who dreamt of a free multiplayer host website</h3>
+  <h3>After a lot of effort he and his team of extreamly efficient Engineers have came up with this idea</h3>
+  <h3>Suhas became a gamer at the age of ten and has a record of gaming 72hrs non-stop</h3>
+  <h3>The LAG team is working hard to host all the multiplayer games in Karnataka for free</h3>
+  <h3>Please donate to our forum by clicking <a href="#">this</a> link</h3>
+</div>
+<footer class="container-fluid text-center">
+  <div class="copy-right-grids">
+        <div class="copy-left">
+            <p class="footer-gd">© 2016 LAG:Local Area Gamers. All Rights Reserved | Design by <a href="https://qwinix.io/" target="_blank">Qwinix Technologies</a></p>
+        </div>
+        <div class="copy-right">
+          
+          <p> <a href="#">Company Information</a>|
+            <a href="#">Privacy Policy</a>|
+            <a href="#">Terms &amp; Conditions</a>
+          </p>
+        </div>
+      
+      </div>
+</footer>
+<script type="text/javascript" src='lag.js'>
+</script>
+</body>
+</html>
+
