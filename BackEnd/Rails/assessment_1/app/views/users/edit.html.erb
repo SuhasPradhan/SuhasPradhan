@@ -1,0 +1,8 @@
+<h1>EDIT</h1>
+<%= form_for :user, url: user_edit_path(@user), method: :put do |t| %>
+	First Name:<br><%= t.text_field :FirstName %><br>
+	Last Name:<br><%= t.text_field :LastName %><br>
+	Email:<br><%= t.text_field :Email %><br>
+	<%= t.submit "submit" %>
+<% end %>
+<%= link_to 'Users List', users_list_path %>
