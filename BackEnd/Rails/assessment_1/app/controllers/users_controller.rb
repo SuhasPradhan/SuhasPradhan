@@ -10,9 +10,13 @@ class UsersController < ApplicationController
 
 	def create
 		@user=User.new(user_params)
-		@user.save
+
+		if @user.save
 		# binding.pry	
-		redirect_to users_list_path
+			redirect_to users_list_path
+		else
+			render 'new'
+		end
 	end
 
 	def edit
@@ -26,10 +30,10 @@ class UsersController < ApplicationController
 	end
 
 	def update
-		# binding.pry
 		@user = User.find_by_id(params[:id])
 		@user.update_attributes(user_params)
-		redirect_to users_list_path
+		# binding.pry
+			redirect_to users_list_path
 	end	
 
 	def destroy
@@ -38,14 +42,17 @@ class UsersController < ApplicationController
 		redirect_to users_list_path	
 	end
 
-
+	def newproject
+		@users=User.all
+		@project=Project.new
+	end
 
 
 
 	private
 
 	def user_params
-		params.require(:user).permit(:FirstName,:LastName,:Email,:password_salt)
+		params.require(:user).permit(:FirstName,:LastName,:Email,:password)
 	end
 
 end

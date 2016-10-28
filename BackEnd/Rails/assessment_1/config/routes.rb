@@ -8,10 +8,11 @@ Rails.application.routes.draw do
   get 'user/new' => 'users#new', as: :user_new
   post 'user/new' => 'users#create', as: :user_create
   get 'users/list' => 'users#index', as: :users_list
-  get 'user/show' => 'users#show', as: :user_show
+  get 'user/:id/show' => 'users#show', as: :user_show
   get 'user/:id/edit' => 'users#edit', as: :user_edit
   put 'user/:id/edit' => 'users#update', as: :user_update
   delete 'user/:id' => 'users#destroy', as: :user_destroy
+  get 'user/:id/newproject' => 'users#newproject', as: :user_newproject
 
 
 

@@ -5,6 +5,7 @@
 	<th>Last NAme</th>
 	<th>Email</th>
 	<th>View</th>
+	<th>Modify</th>
 	<th>Delete</th>
 </tr>
 <% @users.each do |t| %>
@@ -12,6 +13,7 @@
 	<td><%= t.FirstName %></td>
 	<td><%= t.LastName %></td>
 	<td><%= t.Email %></td>
+	<td><%= link_to 'Profile', user_show_path(t) %></td>
 	<td><%= link_to 'Edit', user_edit_path(t)%></td>
 	<td><%= link_to 'Destroy', user_destroy_path(t), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 

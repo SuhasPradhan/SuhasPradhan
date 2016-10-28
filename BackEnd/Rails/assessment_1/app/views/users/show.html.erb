@@ -4,15 +4,18 @@
 	<th>Last Name</th>
 	<th>Email</th>
 	<th>Edit</th>
-	<th>Delete</th>
+	<th>Project</th>
 </tr>
 
 <tr>
-	
+	<td><%= @user.FirstName %></td>
 	<td><%= @user.LastName %></td>
 	<td><%= @user.Email %></td>
+	<td><%= link_to 'Edit', user_edit_path%></td>
+	<td><%= link_to 'Create New Project', user_newproject_path%></td>
 	
 	
 	
-</tr>	
+</tr>
+
 </table>
